@@ -25,22 +25,20 @@ class My_API_Films {
     /**
      * Get entry by id
      */
-    public function get_entry_by_id($id, $param = false, $returnObject = false)
+    public function get_entry_by_id($id, $parameters = false, $returnObject = false)
     {
         // Build call
         $set = 'idIMDB=' . $id;
 
-        if ($param && is_array($param)) {
+        // Add parameters if set
+        if ($parameters && is_array($parameters)) {
 
-            if(isset($param['trailer'])) {
-                $set .= '&trailer=1';
-            }
-
-            if(isset($param['actors'])) {
-                // s = Simple, f = Full
-                $set .= '&actors=' . strtoupper($param['actors']);
+            foreach ($parameters as $key => $value) {
+                $set .= '&' . $key . '=' . $value;
             }
         }
+
+        var_dump($set);
 
         // Make call
         $result = $this->call($set);

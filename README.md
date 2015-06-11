@@ -29,7 +29,7 @@ var_dump($movie);
 // Prepare parameters
 $param = array(
 	'trailer' => true, 
-	'actors' => 's'
+	'actors' => 'S'
 );		
 
 // Receive enhanced movie data
