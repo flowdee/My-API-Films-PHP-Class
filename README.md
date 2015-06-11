@@ -48,6 +48,6 @@ echo($trailer);
 I'm planning to enhance the class continuously in order to receive more specific data. Please take a look into the [issues](https://github.com/flowdee/my-api-films-php-class/issues "issues") and create a new one if you need a special function/enhancement.
 
 ##Credits
-* [Ticksy](http://www.myapifilms.com/ "My API Films")
+* [My API Films](http://www.myapifilms.com/ "My API Films")
 
 If you don't want to miss an update or say hello, follow me on Twitter: [@flowdee](https://twitter.com/flowdee "@flowdee") :wink:
